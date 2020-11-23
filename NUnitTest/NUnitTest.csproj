@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Advanced.Delegates\Advanced.Delegates.csproj" />
+    <ProjectReference Include="..\Advanced.Lambdas\Advanced.Lambdas.csproj" />
   </ItemGroup>
 
 </Project>

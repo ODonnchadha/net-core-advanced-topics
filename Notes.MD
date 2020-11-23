@@ -63,4 +63,30 @@
     2. The caller doesn't need to access other properties or methods on the object implementing the method.
 
 - Lambda Expressions:
+  - An anonymous method.
+    1. No access modifier.
+    2. No name.
+    3. No return statement.
+  - Why do we use them? For convience. 
+  ```csharp
+    static int Square(int number) => number * number;
+  ```
+  - Lambda:
+  ```csharp
+    Func<int, int> square = number => number * number;
+  ```
+  - [Arguments] => (Lambda Operation) [Expression]
+  - e.g.: number => number * number;
+  - Scope:
+  ```csharp
+    static void Main(string[] args)
+    {
+      const int FACTOR = 5;
+      Func<int, int> multiplier = n => n * FACTOR;
+
+      int result = multiplier(10);
+    }
+  ```
+  
+  - Events:
   - 

@@ -42,3 +42,25 @@
   ```
 
   - PhotoFilterHandler is the delegated responsibilitity of the client to apply the filters desired.
+  - Delegate: MulticlassDelegate. Ultimately there is a method and a target. Target is the class that 'holds' that method.
+  - in .NET, there are two delegates that come standard: Action<> and Func<>.
+  - Func<> points to a method that returns a value. Action<> points to a method that has a void return.
+  - So:
+  ```csharp
+    public class PhotoProcessor
+    {
+      public void Process(string path, Action<Photo> filterHandler)
+      {
+        var photo = Photo.Load(path);
+        filterHandler(photo);
+        photo.Save();
+      }
+    }
+  ```
+  - Interfaces or delegates?
+  - Use a delegate when:
+    1. An eventing pattern is used.
+    2. The caller doesn't need to access other properties or methods on the object implementing the method.
+
+- Lambda Expressions:
+  - 

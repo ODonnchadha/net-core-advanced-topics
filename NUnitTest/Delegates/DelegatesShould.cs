@@ -1,5 +1,6 @@
 ﻿using Advanced.Delegates;
 using NUnit.Framework;
+using NUnitTest.Delegates.Helpers;
 
 namespace NUnitTest.Delegates
 {
@@ -20,10 +21,21 @@ namespace NUnitTest.Delegates
         }
 
         [Test()]
-        public void Test()
+        public void ApplyFilters()
         {
             filterHandler += filters.ApplyBrightness;
             filterHandler += filters.ApplyContrast;
+
+            processor.Process(PATH, filterHandler);
+        }
+
+        [Test()]
+        public void ApplyClientFilters()
+        {
+            ClientPhotoFilterHandler handler = new ClientPhotoFilterHandler { };
+
+            filterHandler += filters.ApplyContrast;
+            filterHandler += handler.RemoveRedEyeFilter;
 
             processor.Process(PATH, filterHandler);
         }

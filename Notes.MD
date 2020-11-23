@@ -120,3 +120,6 @@
         protected virtual void OnVideoEncoded() => VideoEncoded?.Invoke(this, EventArgs.Empty);
     }
   ```
+
+- Extension Methods:
+  - Unable to inherit from a sealed class. Use only when you have to.

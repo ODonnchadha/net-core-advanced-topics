@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace NUnitTest.Domain
+namespace NUnitTest.Generics
 {
     public class GenericsShould
     {

@@ -12,7 +12,6 @@
       public T Max(T a, T b) => a.CompareTo(b) > 0 ? a : b;
     }
   ```
-
   - Constraints:
     1. where T : IComparable
     2. where T : [Strongly-typed class]
@@ -29,4 +28,17 @@
   ```
 
 - Delegates:
-  - 
+  - An object that knows how to call a method or a group of methods.
+  - A reference to a function.
+  - We can call methods directly. Why is this needed?
+  - For designing extensible and flexible applications. e.g.: a framework.
+
+  - This is not extensible. Every new filter results in a change or two. So, delegates or interfaces.
+  ```csharp
+      var filters = new PhotoFilters { };
+      filters.ApplyBrightness(photo);
+      filters.ApplyContrast(photo);
+      filters.Resize(photo);
+  ```
+
+  - PhotoFilterHandler is the delegated responsibilitity of the client to apply the filters desired.

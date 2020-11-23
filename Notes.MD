@@ -88,5 +88,35 @@
     }
   ```
   
-  - Events:
-  - 
+- Events:
+  - A mechanism for communication between objects.
+  - Used in building loosely coupled applications.
+  - Helps with extending applications.
+  - Delegates:
+    - Agreement/Contract between Publisher and Subscriber.
+    - Determines the signature of the event handler method in Subscriber.
+
+  - Three steps involved:
+  1. Define a delegate. The contract /agreement between the publisher and trhe subscriber.
+  2. Define an event beased upon the delegate.
+  3. Raise/publish the event.
+  ```csharp
+    public class VideoEncoder
+    {
+        public delegate void VideoEncodedEventHandler(object source, EventArgs args);
+        public event VideoEncodedEventHandler VideoEncoded;
+        public void Encode(Video video) => OnVideoEncoded();
+        protected virtual void OnVideoEncoded() => VideoEncoded?.Invoke(this, EventArgs.Empty);
+    }
+  ```
+
+  - EventHandler and EventHandler<TEventArgs>
+  ```csharp
+    public class VideoEncoder
+    {
+        // public event EventHandler<VideoEncodedEventArgs> VideoEncoded;
+        public event EventHandler<> VideoEncoded;
+        public void Encode(Video video) => OnVideoEncoded();
+        protected virtual void OnVideoEncoded() => VideoEncoded?.Invoke(this, EventArgs.Empty);
+    }
+  ```

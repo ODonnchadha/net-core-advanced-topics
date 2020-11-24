@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using NUnitTest.Lambdas.Helpers;
 
-namespace NUnitTest.Delegates
+namespace NUnitTest.Lambdas
 {
     public class LambdasShould
     {

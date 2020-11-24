@@ -1,7 +1,7 @@
 ﻿using Advanced.Events;
 using NUnit.Framework;
 
-namespace NUnitTest.Delegates
+namespace NUnitTest.Events
 {
     public class EventsShould
     {

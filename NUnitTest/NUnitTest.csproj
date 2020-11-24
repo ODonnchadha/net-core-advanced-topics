@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Advanced.ExtensionMethods\Advanced.ExtensionMethods.csproj" />
     <ProjectReference Include="..\Advanced.Generics\Advanced.Generics.csproj" />
     <ProjectReference Include="..\Advanced.Lambdas\Advanced.Lambdas.csproj" />
+    <ProjectReference Include="..\Advanced.LINQ\Advanced.LINQ.csproj" />
   </ItemGroup>
 
 </Project>

@@ -123,3 +123,36 @@
 
 - Extension Methods:
   - Unable to inherit from a sealed class. Use only when you have to.
+
+- LINQ:
+  - Stands for: *L*amguage *In*tegrated *Q*uery.
+  - Provides one the capability to query objects.
+  - You can Query:
+    1. Onbjects in memory. e.g.: Collections (LINQ to Objects.)
+    2. Databases. (LINQ to Entities.)
+    3. XML. (LINQ to XML.)
+    4. ADO.NET Data Sets. (LINQ to Data Sets.)
+  
+  - LINQ Query Operators : IOrderedEnumerable<T>
+    - from b in books where b.Price < 10 orderby b.title select b.Title;
+  - LINQ Extension Methods
+    - .Where(b => b.Price < 10).OrderBy(b => b.Title).Select(b => b.Title);
+  - Query methods translate to extension methods.
+
+  - .Single(b => b.Title == "A"). Throws hard when one and only one object is returned.
+  - .SingleOrDefault() will return null.
+  - .First(b => b.Title == "A")
+  - .FirstOrDefault() will return null.
+  - .Last()
+  - .LastOrDefault()
+  - .Skip(2).Take(3): "Skip two objects and take three."
+
+  - Aggregate functions:
+    - .Count()
+    - Highest price: .Max(b => b.Price)
+    - .Min()
+    - .Sum()
+  
+- Nullable Types:
+  
+  

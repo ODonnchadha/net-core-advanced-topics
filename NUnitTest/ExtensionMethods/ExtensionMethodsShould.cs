@@ -1,7 +1,7 @@
 ﻿using Advanced.ExtensionMethods;
 using NUnit.Framework;
 
-namespace NUnitTest.Delegates
+namespace NUnitTest.ExtensionMethods
 {
     public class ExtensionMethodsShould
     {

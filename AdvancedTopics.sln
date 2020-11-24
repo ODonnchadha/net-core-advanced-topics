@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.Events", "Advanced
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.ExtensionMethods", "Advanced.ExtensionMethods\Advanced.ExtensionMethods.csproj", "{827A6DE5-D368-44EB-80C8-E42F4A6F72DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.LINQ", "Advanced.LINQ\Advanced.LINQ.csproj", "{1C34885F-A76B-4962-99C9-6C518A75CA17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{827A6DE5-D368-44EB-80C8-E42F4A6F72DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{827A6DE5-D368-44EB-80C8-E42F4A6F72DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{827A6DE5-D368-44EB-80C8-E42F4A6F72DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

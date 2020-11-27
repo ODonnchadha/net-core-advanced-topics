@@ -155,4 +155,32 @@
   
 - Nullable Types:
   
-  
+- Dynamic:
+  - Programming languages:
+  1. Statically-typed languages. C#. Java.
+  2. Dynamically-typed languages: Ruby. JavaScript.
+  - Resolution of types, members, properties, and methods is peformed at compile-time for static. Versus run-time.
+  - Benefits:
+  1. Static languages: early feedback at compile-time.
+  2. Dynamic languages: easier and faster to code.
+  - C# History:
+  - Started as a static language.
+  - .NET 4 added the dynamic capability to improve interoperability with:
+  1. COM. e.g.: Office applications.
+  2. Dynamic languages. e.g.: IronPython.
+  - With reflection:
+  ```csharp
+    object obt = "X";
+    // obj.GetHashCode();
+    var methodInfo = obj.GetType().GetMethod("GetHashCode");
+    methodInfo.Invoke(null, null);
+  ```
+  - With dynamic:
+  ```csharp
+    dynamic excel = "X";
+    excel.Foo();
+  ```
+  - CLR: Common language runtime. From IL (Intermediate language) to machine code. 
+  - DLR was added. Dynamic language runtime.
+  - Runtime type. dynamic (string), dynamic (int). Watch out for RuntimeBinderException at runtime.
+  - Dynamic types need far more unit testing.

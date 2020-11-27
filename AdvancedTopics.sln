@@ -14,13 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		NOTES.md = NOTES.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.Lambdas", "Advanced.Lambdas\Advanced.Lambdas.csproj", "{B66B2063-2070-421D-A0E6-0021ED9BC402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced.Lambdas", "Advanced.Lambdas\Advanced.Lambdas.csproj", "{B66B2063-2070-421D-A0E6-0021ED9BC402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.Events", "Advanced.Events\Advanced.Events.csproj", "{AC9173EB-41A7-4153-9C95-99BD558D73F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced.Events", "Advanced.Events\Advanced.Events.csproj", "{AC9173EB-41A7-4153-9C95-99BD558D73F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.ExtensionMethods", "Advanced.ExtensionMethods\Advanced.ExtensionMethods.csproj", "{827A6DE5-D368-44EB-80C8-E42F4A6F72DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced.ExtensionMethods", "Advanced.ExtensionMethods\Advanced.ExtensionMethods.csproj", "{827A6DE5-D368-44EB-80C8-E42F4A6F72DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.LINQ", "Advanced.LINQ\Advanced.LINQ.csproj", "{1C34885F-A76B-4962-99C9-6C518A75CA17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced.LINQ", "Advanced.LINQ\Advanced.LINQ.csproj", "{1C34885F-A76B-4962-99C9-6C518A75CA17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

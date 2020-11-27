@@ -154,6 +154,25 @@
     - .Sum()
   
 - Nullable Types:
+  - Value types cannot be null.
+  - We'd like to cator for NULL values. e.g.: Working with a database. Birthday can be optional.
+  ```csharp
+    // Datetime birthday = null;
+    Nullable<DateTime> birthday = null;
+    DateTime? birthday = null;
+  ``
+  - e.g.: With DateTime? date = null;
+  1. GetValueOrDefault()
+    - 1/01/0001 12:00:00 AM
+  2. HasValue
+    - False
+  3. Value
+    - InvalidOperationException.
+  - NOTE: Try not to access Value directory.
+  - Null Coalescing operator:
+  ```csharp
+    DateTime dt = date ?? DateTime.Today;
+  ```
   
 - Dynamic:
   - Programming languages:

@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced.ExtensionMethods",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced.LINQ", "Advanced.LINQ\Advanced.LINQ.csproj", "{1C34885F-A76B-4962-99C9-6C518A75CA17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced.ExceptionHandling", "Advanced.ExceptionHandling\Advanced.ExceptionHandling.csproj", "{52C54BDC-3133-49EC-8285-059D9E16D552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C34885F-A76B-4962-99C9-6C518A75CA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C54BDC-3133-49EC-8285-059D9E16D552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C54BDC-3133-49EC-8285-059D9E16D552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C54BDC-3133-49EC-8285-059D9E16D552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C54BDC-3133-49EC-8285-059D9E16D552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

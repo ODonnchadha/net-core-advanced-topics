@@ -184,3 +184,6 @@
   - DLR was added. Dynamic language runtime.
   - Runtime type. dynamic (string), dynamic (int). Watch out for RuntimeBinderException at runtime.
   - Dynamic types need far more unit testing.
+
+- Exception Handling:
+  - Stack trace: Sequence of methods called until the exception is thrown.

@@ -206,3 +206,27 @@
 
 - Exception Handling:
   - Stack trace: Sequence of methods called until the exception is thrown.
+  - Use finally for manual clean-up. Unmanaged resources vis the IDosposable() interface.
+  - Custom exceptions:
+
+- Asynchronous Programming with Async/Await:
+  - Synchronous programming execution:
+    - Program is executed line by line, one at a time.
+    - When a function is called, program execution has to wait until the function returns.
+  - Asynchronous programming execution:
+    - When a function is called, program execution continues to the next line without waiting for the function to complete.
+      - Callback.
+    - Asynchroous programming improves responsiveness. e.g.: Windows media player or Web browser.
+    - When do we use asynchronous programming?
+      - Accessing the Web. Working with files and databases. Working with images.
+    - How?
+      - Traditional approaches: Multithreading and callbacks.
+      - New approach since .NET 4.5: Async/await. 
+      - Use "Async" in the naming convention for each Task<T>.
+      - "await" This operation may be costly and take it bit of time. So we return control.
+      - And the runtime is in charge of executing the method. With an under-the-hood callback.
+      - Task object represents that state of an asynchronous operation.
+
+- What's next?
+  - Additional tips:
+  - Additional resources: Algorithms. Data structures. Object-oriented programming. Clean coding. Refactoring.

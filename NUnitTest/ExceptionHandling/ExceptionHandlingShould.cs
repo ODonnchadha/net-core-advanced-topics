@@ -20,5 +20,20 @@ namespace NUnitTest.ExceptionHandling
         {
             Action a = () => calculator.Divide(5, 0);
         }
+
+        [Test(), ExpectedException(typeof(System.Exception))]
+        public void TryCatch()
+        {
+            Action a;
+
+            try
+            {
+                a = () => calculator.Divide(5, 0);
+            }
+            catch
+            {
+                a = () => throw new Exception();
+            }
+        }
     }
 }
